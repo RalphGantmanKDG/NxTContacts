@@ -8,39 +8,41 @@
 
 <section class="contactsContainer">
   <div class="card">
-    <p>This is a name</p>
-    <p>this is the email</p>
+    <p>Lady Gaga</p>
+    <p>ladygaga@gaga.com</p>
     <button>Delete</button>
     <button>edit</button>
   </div>
 
   <div class="card">
-    <p>This is a name</p>
-    <p>this is the email</p>
+    <p>Lady Gaga</p>
+    <p>ladygaga@gaga.com</p>
     <button>Delete</button>
     <button>edit</button>
   </div>
 
   <div class="card">
-    <p>This is a name</p>
-    <p>this is the email</p>
+    <p>Lady Gaga</p>
+    <p>ladygaga@gaga.com</p>
     <button>Delete</button>
     <button>edit</button>
   </div>
 
   <div class="card">
-    <p>This is a name</p>
-    <p>this is the email</p>
+    <p>Lady Gaga</p>
+    <p>ladygaga@gaga.com</p>
     <button>Delete</button>
     <button>edit</button>
   </div>
 
   <div class="card">
-    <p>This is a name</p>
-    <p>this is the email</p>
+    <p>Lady Gaga</p>
+    <p>ladygaga@gaga.com</p>
     <button>Delete</button>
     <button>edit</button>
   </div>
+
+
 </section>
 
 @endsection 

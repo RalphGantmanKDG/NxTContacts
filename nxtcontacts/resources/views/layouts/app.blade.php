@@ -79,6 +79,8 @@
 
         <main class="py-4">
             @yield('content')
+            @yield('add')
+            @yield('delete')
         </main>
     </div>
 </body>

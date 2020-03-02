@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="{{ url('/css/styles.css') }}" />
 </head>
 <body>
-  @yield('content')
+  <!-- @yield('content')
+  @yield('delete') -->
 </body>
 </html>
