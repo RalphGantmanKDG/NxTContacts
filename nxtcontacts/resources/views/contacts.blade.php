@@ -4,45 +4,17 @@
 
 <button class="btn_contact">Create new contact</button>
 <br>
-<input class="searchBar" type="text" placeholder="Search..">
+<input class="searchBar" type="text" placeholder="Search in contacts">
 
 <section class="contactsContainer">
   <div class="card">
-    <p>Lady Gaga</p>
-    <p>ladygaga@gaga.com</p>
-    <button>Delete</button>
-    <button>edit</button>
+    <p class="name">Lady Gaga</p>
+    <p class="email">ladygaga@gaga.com</p>
+    <div class="card_button_container">
+      <button class="btn_delete">Delete</button>
+      <button class="btn_edit">edit</button>
+    </div>
   </div>
-
-  <div class="card">
-    <p>Lady Gaga</p>
-    <p>ladygaga@gaga.com</p>
-    <button>Delete</button>
-    <button>edit</button>
-  </div>
-
-  <div class="card">
-    <p>Lady Gaga</p>
-    <p>ladygaga@gaga.com</p>
-    <button>Delete</button>
-    <button>edit</button>
-  </div>
-
-  <div class="card">
-    <p>Lady Gaga</p>
-    <p>ladygaga@gaga.com</p>
-    <button>Delete</button>
-    <button>edit</button>
-  </div>
-
-  <div class="card">
-    <p>Lady Gaga</p>
-    <p>ladygaga@gaga.com</p>
-    <button>Delete</button>
-    <button>edit</button>
-  </div>
-
-
 </section>
 
 @endsection 
