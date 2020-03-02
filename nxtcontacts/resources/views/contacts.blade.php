@@ -15,6 +15,33 @@
       <button class="btn_edit">Edit</button>
     </div>
   </div>
+
+  <div class="card">
+    <p class="name">Lady Gaga</p>
+    <p class="email">ladygaga@gaga.com</p>
+    <div class="card_button_container">
+      <button class="btn_delete">Delete</button>
+      <button class="btn_edit">Edit</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <p class="name">Lady Gaga</p>
+    <p class="email">ladygaga@gaga.com</p>
+    <div class="card_button_container">
+      <button class="btn_delete">Delete</button>
+      <button class="btn_edit">Edit</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <p class="name">Lady Gaga</p>
+    <p class="email">ladygaga@gaga.com</p>
+    <div class="card_button_container">
+      <button class="btn_delete">Delete</button>
+      <button class="btn_edit">Edit</button>
+    </div>
+  </div>
 </section>
 
 @endsection 
