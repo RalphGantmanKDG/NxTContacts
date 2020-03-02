@@ -81,6 +81,7 @@
             @yield('content')
             @yield('add')
             @yield('delete')
+            @yield('edit')
         </main>
     </div>
 </body>

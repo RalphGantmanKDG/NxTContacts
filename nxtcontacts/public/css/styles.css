@@ -115,16 +115,18 @@ a {
     width: 100%;
 }
 
-/* add page */
+/* add page */ /* edit page */
 
-.popUp_add_container {
+.popUp_add_container,
+.popUp_edit_container {
     border: 1px solid blue;
     padding: 10px;
     margin: 100px auto;
     width: 50%;
 }
 
-.add_message {
+.add_message,
+.edit_message {
     font-size: 18px;
     font-weight: 600;
     color: blue;
@@ -141,10 +143,10 @@ a {
 
 .btn_create {
     margin: 0px;
-    background-color: white;
+    background-color: blue;
     padding: 10px;
-    color: blue;
+    color: white;
     font-size: 18px;
-    border: 1px solid #000aff;
+    border: none;
     width: 30%;
 }
