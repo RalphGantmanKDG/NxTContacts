@@ -11,7 +11,7 @@ body {
 
 .btn_contact {
     margin: 0px 0px 20px 0px;
-    background-color: #000aff;
+    background-color: blue;
     padding: 10px;
     color: white;
     font-size: 18px;
@@ -59,9 +59,9 @@ body {
     margin: 0px 0px 0px 0px;
     background-color: white;
     padding: 10px;
-    color: #ff0e0e;
+    color: red;
     font-size: 18px;
-    border: 1px solid #ff0e0e;
+    border: 1px solid red;
     width: 100%;
 }
 
@@ -69,9 +69,9 @@ body {
     margin: 0px 0px 0px 0px;
     background-color: white;
     padding: 10px;
-    color: #000aff;
+    color: blue;
     font-size: 18px;
-    border: 1px solid #000aff;
+    border: 1px solid blue;
     width: 100%;
 }
 
@@ -81,4 +81,70 @@ a {
     color: black;
     font-size: 18px;
     font-weight: 600;
+}
+
+/* delete page */
+
+.popUp_delete_container {
+    border: 1px solid red;
+    padding: 10px;
+    margin: 100px auto;
+    width: 50%;
+}
+
+.popUp_delete_button_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.delete_message {
+    font-size: 18px;
+    font-weight: 600;
+    color: red;
+    margin: 0px;
+}
+
+.btn_nvrmnd {
+    margin: 0px 0px 0px 0px;
+    background-color: white;
+    padding: 10px;
+    color: blue;
+    font-size: 18px;
+    border: 1px solid #000aff;
+    width: 100%;
+}
+
+/* add page */
+
+.popUp_add_container {
+    border: 1px solid blue;
+    padding: 10px;
+    margin: 100px auto;
+    width: 50%;
+}
+
+.add_message {
+    font-size: 18px;
+    font-weight: 600;
+    color: blue;
+    margin: 0px 0px 10px 0px;
+}
+
+.textArea {
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+    font-size: 18px;
+    width: 100%;
+    outline: none;
+}
+
+.btn_create {
+    margin: 0px;
+    background-color: white;
+    padding: 10px;
+    color: blue;
+    font-size: 18px;
+    border: 1px solid #000aff;
+    width: 30%;
 }

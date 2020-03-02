@@ -2,12 +2,14 @@
 
 @section("delete")
 
-<div>
-  <p>Are you sure you want to delete this contact?</p>
-  <p>Lady Gaga</p>
-  <p>ladygaga@gaga.com</p>
-  <button>Delete</button>
-  <button>Nevermind</button>
+<div class="popUp_delete_container">
+  <p class="delete_message">Are you sure you want to delete this contact?</p>
+  <p class="name">Lady Gaga</p>
+  <p class="email">ladygaga@gaga.com</p>
+  <div class="popUp_delete_button_container">
+    <button class="btn_delete">Delete</button>
+    <button class="btn_nvrmnd">Nevermind</button>
+  </div>
 </div>
 
 @endsection 
