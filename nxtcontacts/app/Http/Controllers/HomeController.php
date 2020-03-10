@@ -26,5 +26,9 @@ class HomeController extends Controller
         return view('delete');
     }
 
-    
+    public function create()
+    {
+        return view('create');
+    }
+
 }

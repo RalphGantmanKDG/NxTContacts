@@ -11,16 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
+
 // Route::get('/delete', 'HomeController@index')->name('home');
-Route::get('/contacts', 'HomeController@index')->name('home');
-Route::get('/delete', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home')->middleware('auth'); //"contacts heb ik veranderd naar "/" want dat is hetzelfde & ->middleware('auth') toegevoeg voor fout in "logout"
+/*Route::get('/delete', 'HomeController@index')->name('home');
 Route::get('/add', 'HomeController@index')->name('home');
-Route::get('/edit', 'HomeController@index')->name('home');
+Route::get('/edit', 'HomeController@index')->name('home');*/ //tijdelijk non-actief wegens testing
+
 
 // wat doet dat pijltje hierachter? fix me //->name('home')
