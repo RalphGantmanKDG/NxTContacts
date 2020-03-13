@@ -23,8 +23,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('delete');
+        return view('contacts');
     }
 
-    
+    public function create()
+    {
+        return view('create');
+    }
+
 }
