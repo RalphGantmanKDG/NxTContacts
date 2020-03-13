@@ -1,12 +1,18 @@
 @extends('layouts.app')
 
 @section("edit")
-
+    <a href="{{route("getContacts")}}" class="btn btn-success mb-3">Return</a>
 <div class="popUp_edit_container">
   <p class="edit_message">You are editing this contact</p>
-  <input class="textArea" type="text" value="Lady Gaga">
-  <input class="textArea" type="text" value="ladygaga@gaga.com"> 
-  <button class="btn_create">Save Changes</button>
+    <form method="put" action="{{route('editContact', $contact->id)}}">
+        @csrf
+        <label for="name">Contact Name:</label>
+        <input class="textArea" type="text" value="{{$contact->name}}" >
+        <label for="email">Email adress:</label>
+        <input class="textArea" type="text" value="{{$contact->email}}">
+        <button class="btn_create" type="submit">Edit</button>
+    </form>
+
 </div>
 
-@endsection 
+@endsection
