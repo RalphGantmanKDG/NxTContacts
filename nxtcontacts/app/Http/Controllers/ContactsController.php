@@ -6,6 +6,8 @@ use App\Repositories\ContactRepository;
 use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use App\Contact;
+use Illuminate\Support\Facades\Validator;
+use Session;
 
 class ContactsController extends Controller
 {
@@ -31,6 +33,8 @@ class ContactsController extends Controller
         $contact = new Contact;
         $contact->name = $request->input('name');
         $contact->email = $request->input('email');
+
+
         $contact->save();
         return view('contactAdded');
     }
@@ -44,6 +48,19 @@ class ContactsController extends Controller
     {
         $data = Contact::all();
         return view('contacts', ['data'=>$data]);
+
+    }
+
+    public function delete($id)
+    {
+
+    }
+    public function deleted($id)
+    {
+        $contact = Contact::find($id);
+        $contact->delete();
+        return view('deletedContact', ['contact'=>$contact]);
+
     }
 
     public function edit($id)
@@ -51,12 +68,13 @@ class ContactsController extends Controller
         $contact = Contact::find($id);
         return view('edit', ['contact'=>$contact]);
     }
-
-    public function delete($id)
+    public function edited(Request $request)
     {
-        $contact = Contact::find($id);
-
-        return view('delete', ['contact'=>$contact]);
-
+        $contact = new Contact;
+        $contact->name = $request->input('name');
+        $contact->email = $request->input('email');
+        $contact->save();
+        return view('contactAdded');
+        return view('editedContact');
     }
 }

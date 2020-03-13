@@ -13,7 +13,7 @@
                 <p class="email">{{$i->email}}</p>
                 <div class="card_button_container">
                     <a href="{{route("viewEditContact", $i->id)}}" class="btn btn-success mb-2">Edit</a>
-                    <a href="{{route("deleteContact", $i->id)}}" class="btn btn-success mb-2">Delete</a>
+                    <a href="{{route("deletedContact", $i->id)}}" class="btn btn-success mb-2">Delete</a>
                 </div>
             </div>
         @endforeach

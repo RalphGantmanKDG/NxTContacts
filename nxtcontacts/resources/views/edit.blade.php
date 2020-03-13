@@ -10,7 +10,7 @@
         <input class="textArea" type="text" value="{{$contact->name}}" >
         <label for="email">Email adress:</label>
         <input class="textArea" type="text" value="{{$contact->email}}">
-        <button class="btn_create" type="submit">Edit</button>
+        <a href="{{route("editedContact")}}" class="btn btn-success mb-3">Edit</a>
     </form>
 
 </div>

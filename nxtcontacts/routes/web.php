@@ -20,8 +20,10 @@ Route::get('/contacts', 'ContactsController@index')->name('getContacts')->middle
 Route::get('/contacts/{id}/delete', 'ContactsController@delete')->name('deleteContact')->middleware('auth');
 Route::get('/contacts/add', 'ContactsController@viewContactForm')->name('viewContactForm')->middleware('auth');
 Route::post('/contacts/add', 'ContactsController@create')->name('addContact')->middleware('auth');
+Route::get('/contacts/{id}/deleted', 'ContactsController@deleted')->name('deletedContact')->middleware('auth');
 Route::get('/contacts/{id}/edit', 'ContactsController@edit')->name('viewEditContact')->middleware('auth');
-Route::put('/contacts/{id}/edit', 'ContactsController@edit')->name('editContact')->middleware('auth');
+Route::put('/contacts/edited', 'ContactsController@edit')->name('editContact')->middleware('auth');
+Route::get('/contacts/edited', 'ContactsController@edited')->name('editedContact')->middleware('auth');
 
 
 

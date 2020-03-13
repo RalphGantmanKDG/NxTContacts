@@ -7,10 +7,11 @@
         <p class="name">{{$contact->name}}</p>
         <p class="email">{{$contact->email}}</p>
         <div class="popUp_delete_button_container">
-            <button class="btn_delete"><a href="/delete/{{$contact->id}}"> Delete</a></button>
             <a href="{{route("getContacts")}}" class="btn btn-success mb-3">Nevermind</a>
+            <a href="{{route("deletedContact")}}" class="btn btn-success mb-3">Delete</a>
         </div>
     </div>
 
 @endsection
+
 
