@@ -8,12 +8,15 @@
           <input class="textArea" type="text" placeholder="Email"> --}} {{--//blade en laravel hebben hun eigen ding daarvoor--}}
         <form method="post" action="{{route('addContact')}}">
             @csrf
-            <label for="name">Contact Name:</label>
+            <br>
+            <label for="name">Name:</label>
             <input type="text" id="name" name="name">
-            <label for="email">Email adress:</label>
+            <br><br>
+            <label for="email">Email:   </label>
             <input type="text" id="email" name="email">
-            <button class="btn_create" type="submit">Create</button>
-            git
+            <br>
+
+            <button class="btn_create" type="submit">Add contact</button>
         </form>
 
 
